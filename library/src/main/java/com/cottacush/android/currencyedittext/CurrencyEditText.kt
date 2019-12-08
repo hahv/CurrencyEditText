@@ -22,6 +22,7 @@ import android.text.InputType
 import android.util.AttributeSet
 import androidx.annotation.RequiresApi
 import com.google.android.material.textfield.TextInputEditText
+import java.math.BigDecimal
 import java.util.Locale
 
 class CurrencyEditText(context: Context, attrs: AttributeSet?) : TextInputEditText(context, attrs) {
@@ -81,7 +82,7 @@ class CurrencyEditText(context: Context, attrs: AttributeSet?) : TextInputEditTe
             text.toString(),
             textWatcher.decimalFormatSymbols.groupingSeparator.toString(),
             currencySymbolPrefix
-        ).toDoubleOrNull()
+        ).toBigDecimalOrNull()?.toDouble()
     }
 
     override fun onFocusChanged(focused: Boolean, direction: Int, previouslyFocusedRect: Rect?) {

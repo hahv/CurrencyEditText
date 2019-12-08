@@ -8,9 +8,9 @@
         tools:context=".currencyedittext.MainActivity">
 
     <com.cottacush.android.currencyedittext.CurrencyEditText
-            app:currencySymbol="$"
+            app:currencySymbol="#"
             app:useCurrencySymbolAsHint="true"
-            app:localeTag="en-NG"
+            app:localeTag="fa"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:ems="10"
@@ -48,7 +48,7 @@
             app:layout_constraintVertical_chainStyle="packed" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintVertical_bias="0.19999999"/>
-    <Button
+    <com.google.android.material.button.MaterialButton
             android:text="get value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
