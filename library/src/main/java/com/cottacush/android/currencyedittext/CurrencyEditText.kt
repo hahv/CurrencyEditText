@@ -25,7 +25,7 @@ import com.google.android.material.textfield.TextInputEditText
 import java.math.BigDecimal
 import java.util.*
 
-class CurrencyEditText(
+open class CurrencyEditText(
     context: Context,
     attrs: AttributeSet?
 ) : TextInputEditText(context, attrs) {
